@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 75vh;
+}
+
+.navbar {
+    display: flex;
+    background-color: #2E67A0;
+    /* background-color: #6A513B; */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Concert One', cursive;
+}
+
+img {
+    width: 100px;
+}
+
+.main {
+    margin: 70px auto;
+}
+
+#usr-input {
+    width: 40%;
+    height: 20vh;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-family: 'Handlee', cursive;
+}
+
+#btn {
+    text-align: center;
+}
+
+.btn-click {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #2E67A0;
+    color: white;
+    font-family: 'Handlee', cursive;
+}
+
+.btn-click:hover {
+    box-shadow: 2px 2px 15px rgb(202, 194, 194);
+}
+
+.output-heading {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    margin: 20px;
+    font-family: 'Handlee', cursive;
+}
+
+#outText {
+    border: 0.5px solid black;
+    width: 40%;
+    min-height: 20vh;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    opacity: 50%;
+    cursor: text;
+    font-family: 'Handlee', cursive;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    min-height: 13.5vh;
+    padding: 10px;
+    background-color: #2E67A0;
+    color: rgb(200, 194, 194);
+}
+
+.footer {
+    margin: 0px auto;
+    width: 80vw;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+
+    #usr-input,
+    #outText {
+        width: 90% !important;
+    }
+
+    .footer {
+        width: 90vw !important;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    #usr-input,
+    #outText {
+        width: 70% !important;
+    }
+
+    .footer {
+        width: 80vw !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #usr-input,
+    #outText {
+        width: 60%;
+    }
+
+    .footer {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-height: 820px) {
+    header {
+        height: 85vh;
+    }
+}
